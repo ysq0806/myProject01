@@ -18,10 +18,8 @@ function getUserInfo() {
                 return layui.layer.msg('获取用户信息失败');
             }
             //成功的话调用renderAvatar函数 来渲染头像信息
-            console.log(res);
+            // console.log(res);
             renderAvatar(res.data);
-
-
         }, //这里一定要注意  如果后面还有需要写其他函数 要加痘号  对象
         //不管请求成功与否 都会执行  函数
         // complete: function (res) {
